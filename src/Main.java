@@ -1,6 +1,8 @@
 import model.BankAccount;
+import model.HourClass;
 import model.ItemVenta;
 import service.ServiceBank;
+import service.ServiceHour;
 import service.ServiceItem;
 
 import java.util.Scanner;
@@ -25,6 +27,22 @@ public class Main {
         serviceBank.debito(A1,1500.0);
         serviceBank.debito(A1,30000.0);
         serviceBank.ImprimirAccount(A1);
+        System.out.println("Ejercicio 5");
+        ServiceHour ServiceHour = new ServiceHour();
+        HourClass H1;
+        H1 = ServiceHour.CreateClock(9,59,59);
+//        ServiceHour.showClock(H1);
+//        ServiceHour.sumseconds(H1);
+//        ServiceHour.showClock(H1);
+//        ServiceHour.sumseconds(H1);
+//        ServiceHour.showClock(H1);
+        ServiceHour.sumsminutes(H1);
+        ServiceHour.showClock(H1);
+//        ServiceHour.retseg(H1);
+//        ServiceHour.showClock(H1);
+//        ServiceHour.retmin(H1);
+//        ServiceHour.showClock(H1);
+
 
 
 
